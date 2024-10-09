@@ -70,5 +70,6 @@ for line in database.index: # for each database index do the registration proces
 
 #5. Repeat the register process until all products has been registered
         pyautogui.scroll(1000)
+print ("success!")
 
 #end
