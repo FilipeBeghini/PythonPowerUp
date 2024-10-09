@@ -33,7 +33,7 @@ print (database)
 line = 0
 #for loop
 # for line in range(5): # run the for loop 5 times (increment line 4 times). 
-for line in database.index:      
+for line in database.index: #for each database index do the registration process.
 
         # 4. register a product
                 # prod_code
