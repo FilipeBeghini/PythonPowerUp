@@ -1,10 +1,11 @@
-# Header>
+# Imports>
 import pyautogui
 import time
 import pandas
+from config import get_database
 
 #timer config
-pyautogui.PAUSE = 0.3
+pyautogui.PAUSE = 0.5
 
 # Register Products
 #1. Open system to register the products (https://dlp.hashtagtreinamentos.com/python/intensivao/login)
@@ -27,12 +28,12 @@ pyautogui.press ("enter")
 time.sleep(1)
 
 #3. import data from database products.csv
-database = pandas.read_csv ("products.csv")
+database = get_database()
 print (database)
 
-line = 0
 # for loop
-# for line in range(5): # run the for loop 5 times (increment line 4 times). 
+line = 0
+pyautogui.PAUSE = 0.1
 for line in database.index: # for each database index do the registration process.
 
         # 4. register a product
@@ -70,6 +71,8 @@ for line in database.index: # for each database index do the registration proces
 
 #5. Repeat the register process until all products has been registered
         pyautogui.scroll(1000)
+        
+pyautogui.PAUSE = 0.5
 print ("success!")
 
 #end
