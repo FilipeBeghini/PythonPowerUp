@@ -16,7 +16,7 @@ pyautogui.press ("enter")
 time.sleep(2)
 pyautogui.write ("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
 pyautogui.press ("enter")
-time.sleep(1)
+time.sleep(2)
 
 #2. sign in (user: user@system.com  PW: admin)
 pyautogui.click (x=609, y=379)
@@ -25,7 +25,7 @@ pyautogui.press ("tab")
 pyautogui.write ("filipe")
 pyautogui.press ("tab")
 pyautogui.press ("enter")
-time.sleep(1)
+time.sleep(2)
 
 #3. import data from database products.csv
 database = get_database()
